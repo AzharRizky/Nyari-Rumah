@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+ 
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+RewriteRule ^(.*)\.html$ content.php?url=$1 [l]
+Options All -Indexes
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+
+</IfModule>

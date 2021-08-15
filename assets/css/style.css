@@ -1,0 +1,887 @@
+/* All */
+html, body {
+    scroll-behavior: smooth;
+}
+.section-pad {
+    padding: 100px 0;
+}
+.section-headline h2 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    position: relative;
+    text-transform: capitalize;
+}
+.section-headline h2::after {
+    border: 1px solid #333;
+    bottom: -20px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 40%;
+}
+
+/* Nav Bar */
+nav .nav-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #363f41;
+    margin-right: 1.1rem;
+    transition: 0.3s;
+}
+nav .nav-link:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+nav #navbarSupportedContent {
+    width: auto;
+}
+.navbar-styles {
+    border-bottom: 0.8px solid #00000010 !important;
+}
+
+/* About */
+#aboutp {
+    background-color: rgba(255,255,255,.75);
+}
+#aboutp p {
+    text-align: justify;
+}
+#asset-1-about {
+    max-width: 45vh;
+}
+#aboutp h3 {
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+
+/* Sejarah */
+.story {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+}
+.story li .story-icon {
+    margin-left: -1.5rem;
+    margin-right: 1.5rem;
+}
+.story-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-shrink: 0;
+}
+.story li {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 50%;
+}
+.story li:nth-child(2n) .story-icon {
+    margin-right: -1.5rem;
+    margin-left: 1.5rem;
+}
+.story li:nth-child(2n) {
+    margin-left: 0;
+    margin-right: 50%;
+    flex-direction: row-reverse;
+    text-align: right; 
+}
+.story li:not(:last-child):after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3.75rem;
+    width: 1px;
+    height: 3rem;
+    background: black;
+    opacity: .5;
+}
+.story li:not(:last-child) {
+     position: relative;
+     padding-bottom: 4.5rem;
+}
+
+/* Home Program */
+.program-icon {
+    border: 1px solid black;
+    border-radius: 50%;
+    color: black;
+    display: inline-block;
+    font-size: 35px;
+    height: 100px;
+    line-height: 100px;
+    width: 100px;
+}
+.program-icon:hover {
+    color: #575757;
+}
+
+/* Home About */
+#home-about p {
+    text-align: justify;
+}
+.home-about-img {
+    max-width: 400px;
+}
+
+/* Home Post */
+.post .card-body a {
+    text-decoration: none;
+}
+.post .card-body a:hover, .post .card-body a {
+    text-decoration: none;
+}
+.post-img {
+    max-width: 240px;
+}
+
+/* Home - Testimonial */
+.testi {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.testi-body {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+/* Home - Newsletter */
+.recent-single-post {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    overflow: hidden;
+    padding: 15px 10px;
+}
+.feed-img {
+    display: inline-block;
+    float: left;
+    padding: 0 5px;
+    width: 35%;
+}
+.img-feed {
+    max-width: 90px;
+}
+.pst-content {
+    display: inline-block;
+    float: left;
+    width: 65%;
+}
+.pst-content p a{
+    text-decoration: none;
+}
+.pst-content p a:hover, .left-blog ul li a:hover {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+/* Home Paralax */
+.parallax {
+    background: rgba(0, 0, 0, 0) url(../img/bg.jpg) no-repeat fixed center top/cover;
+    height: auto;
+    width: 100%;
+}
+.parallax-inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+.inner-padding {
+    padding: 100px 0px 110px;
+}
+.inner-overly {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.quote {
+    border: 1px dotted #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 24px;
+    height: 70px;
+    line-height: 70px;
+    width: 70px;
+}
+.quote:hover {
+    color: #fff;
+}
+.testi-text p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+.testi-text h6 {
+    color: #fff;
+    font-size: 20px;
+}
+.testi-text .text-center > h6 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Home - Subcribe Us on Youtube */
+.suscribe-area {
+    background: #dc3545 none repeat scroll 0 0;
+    padding: 30px 0;
+}
+.suscribe-text {
+    display: block;
+    padding: 10px 0;
+}
+.suscribe-text h3 {
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.sus-btn {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #fff;
+    color: #dc3545;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 100px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+.sus-btn:hover {
+    background: #dc3545 none repeat scroll 0 0;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/* Home - Ask Me */
+#google-map {
+    height: 370px;
+    margin-bottom: 20px;
+}
+.php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+.php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+.php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+.php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+.php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+.php-email-form input, .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+.php-email-form input:focus, .php-email-form textarea:focus {
+    border-color: #3ec1d5;
+}
+.php-email-form input {
+    padding: 10px 15px;
+}
+.php-email-form textarea {
+    padding: 12px 15px;
+}
+.php-email-form button[type="submit"] {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    color: #444;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    border-radius: 30px;
+}
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Struktur Organisasi Page */
+.organisasi {
+    background-color: #e5ecee;
+}
+.team h1 {
+    font-weight: 400;
+    font-size: 3rem;
+}
+.team .card {
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    border-radius: 13px;
+}
+
+/* Contact Page */
+.contact {
+    background: #e5ecee;
+}
+.contact a {
+    font-style: none;
+    text-decoration: none;
+    color: #2680EB;
+    cursor: pointer;
+    transition: .3s;
+}
+.contact a:hover {
+    color: #267febc7;
+    transition: .3s;
+}
+.contact h1 {
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+.contact .col-md-10 i {
+    font-size: 3rem;
+}
+.contact .card {
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    border-radius: 13px;
+}
+
+/* Content Page */
+.post-content .card {
+    flex: 1;
+    margin: 0 10px;
+}
+.post-content .card .img {
+    max-width: 100%;
+}
+.post-content .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.post-content .card .content {
+    padding: 10px 20px;
+}
+.post-content .card .content .card-text {
+    text-align: justify;
+}
+
+/* Admin Login */
+.login-bg-image {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.cancelbtn, .cancelbtn:hover {
+    color: white;
+    text-decoration: none;
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+.login-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 25%;
+}
+.login-imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.login-imgcontainer .close {
+    text-decoration: none;
+    position: absolute;
+    right: 8px;
+    top: -32px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.login-container {
+    padding: 16px;
+}
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.form-icon {
+    padding: 15px;
+    background: black;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+.login-container input[type=text], .login-container input[type=password] {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.login-container input[type=text]:focus, .login-container input[type=password]:focus {
+    border: 2px solid #000;
+}
+.submitlog-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.login-container .cancelbtn {
+    width: 100%;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.cancelbtn, .cancelbtn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Side Bar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgb(0 0 0 / 10%);
+}
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+@media (max-width: 767.98px) {
+    #brand {
+        margin-right: 0;
+    }
+    .sidebar {
+        padding: 0 0 0;
+        top: 3.1rem;
+    }
+}
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+}
+#sidebar {
+    --bs-gutter-x: 0;
+}
+.navbar-light .nav .nav-link {
+    color: rgba(0,0,0,.55);
+}
+.navbar-light .nav .nav-link:focus, .navbar-light .nav .nav-link:hover {
+    color: rgba(0,0,0,.7);
+}
+
+/* Admin Dashboard */
+.dashboard-card {
+    text-decoration: none;
+}
+.dashboard-card .icon {
+    padding: 15px;
+    min-width: 50px;
+    text-align: center;
+    font-size: 50px;
+    background: transparent;
+}
+.dashboard-card .card-body {
+    text-decoration: none;
+    color: black;
+    background-color: #ddd;
+}
+.dashboard-card .card-body:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer-style {
+    border-top: 0.8px solid #00000010 !important;
+}
+footer .section-footer .col-text {
+    text-align: justify;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    margin-top: 5px;
+}
+footer ul li a {
+    color: #707070;
+    transition: 0.3s;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    color: #1f1f1f;
+    transition: 0.3s;
+    text-decoration: none;
+}
+footer .menu {
+    padding-left: 50px;
+}
+#contact a {
+    font-size: 18px;
+    display: inline-block;
+    background: #ddd;
+    color: black;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+#contact a:hover {
+    background: #1f1f1f;
+    color: white;
+    text-decoration: none;
+}
+
+/* Program Menu */
+.section-training {
+    background-color: #e5ecee;
+}
+.lesson-wrap-1 {
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    transition: background-color .5s, transform .8s, box-shadow .5s, color .5s;
+    color: white;
+    background-color: #F5564E;
+}
+.lesson-wrap-1:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 5px #333;
+    color: #fff;
+    text-decoration: none;
+}
+#lesson-btn {
+    text-decoration: none;
+}
+.lesson-wrap-1 h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    font-weight: 800;
+}
+.lesson-wrap-1 p {
+    margin: 0 auto;
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: 180px;
+    text-decoration: none;
+}
+.sub-program-icon {
+    color: white;
+    display: inline-block;
+    font-size: 50px;
+    height: 100px;
+    line-height: 100px;
+    width: 100px;
+    text-decoration: none;
+}
+.sub-program-icon:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (min-width: 1920px) {
+    /* Admin Login */
+    .login-content {
+        width: 50%;
+    }
+}
+  
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+    /* Admin Login */
+    .login-content {
+        width: 50%;
+    }
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Nav Bar */
+    nav #navbarSupportedContent {
+        width: 100%;
+    }
+    
+    /* Home - About */
+    .home-about-img {
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+    
+    /* Home Post Feed */
+    .img-feed {
+        max-width: 85px;
+    }
+
+    /* Subcribe Youtube */
+    .sus-btn {
+        margin-left: 0;
+    }
+    .suscribe-text h3 {
+        font-size: 16px;
+        padding-right: 20px;
+    }
+    .contact-form {
+        margin-top: 0px;
+    }
+    
+    /* Admin Login */
+    .login-content {
+        width: 50%;
+    }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    /* All */
+    .section-headline h2 {
+        font-size: 30px;
+    }
+
+    /* Home Post */
+    .post-img {
+        max-width: 350px;
+    }
+    
+    /* Home Post Feed */
+    .img-feed {
+        max-width: 85px;
+    }
+
+    /* Subcribe Youtube */
+    .sus-btn {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    
+    /* Home - About */
+    .home-about-img {
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        margin-top: 30px;
+    }
+    
+    /* Admin Login */
+    .login-content {
+        width: 90%;
+    }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /* Nav Bar */
+    nav #navbarSupportedContent {
+        width: 100%;
+    }
+    
+    /* Sejarah */
+    .story li:not(:last-child):after {
+        top: 4.357rem;
+    }
+    
+    /* Home Post */
+    .post-img {
+        max-width: 350px;
+    }
+    
+    /* Home Post Feed */
+    .img-feed {
+        max-width: 85px;
+    }
+
+    /* Home - About */
+    .home-about-img {
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+    
+    /* Team Content */
+    .team .col-md-4, .team .col-md-3 {
+        margin-bottom: 40px;
+    }
+    
+    /* Admin Login */
+    .login-content {
+        width: 90%;
+    }
+    
+    /* Footer */
+    footer{
+        padding: 0px 20px;
+    }
+    footer .section-footer, footer .section-footer .row .col-text {
+        text-align: center;
+    }
+    footer .section-footer .row .col-xs-12{
+        margin-bottom: 40px;
+    }
+    .p-footer{
+        padding: 0px 30px;
+    }
+    .copy-right{
+        text-align: center;
+    }
+    footer .menu{
+        padding-left: 0px;
+    }
+}
+
+/* Mobile version */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Nav Bar */
+    nav #navbarSupportedContent {
+        width: 100%;
+    }
+    
+    /* Home - About */
+    .home-about-img {
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+    
+    /* Sejarah */
+    .story li:not(:last-child):after {
+        top: 4.357rem;
+    }
+
+    /* Home Post */
+    .post-img {
+        max-width: 350px;
+    }
+
+    /* Home Post Feed */
+    .img-feed {
+        max-width: 85px;
+    }
+    
+    /* Team Content */
+    .team .col-md-4, .team .col-md-3 {
+        margin-bottom: 40px;
+    }
+    
+    /* Admin Login */
+    .login-content {
+        width: 90%;
+    }
+    
+    /* Footer */
+    footer{
+        padding: 0px 20px;
+    }
+    footer .section-footer, footer .section-footer .row .col-text {
+        text-align: center;
+    }
+    footer .section-footer .row .col-xs-12{
+        margin-bottom: 40px;
+    }
+    .p-footer{
+        padding: 0px 30px;
+    }
+    .copy-right{
+        text-align: center;
+    }
+    footer .menu{
+        padding-left: 0px;
+    }
+}
